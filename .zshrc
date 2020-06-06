@@ -20,10 +20,15 @@ compinit
 # End of lines added by compinstall
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
-# some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
+## Colorize the ls output ##
+alias ls='ls --color=auto'
+
+## Use a long listing format ##
+alias ll='ls -la'
+
+## Show hidden files ##
+alias l.='ls -d .* --color=auto'
+
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -45,4 +50,6 @@ _dotnet_zsh_complete()
 }
 compctl -K _dotnet_zsh_complete dotnet
 
-source ~/.bash/elm-sh-completion/elm-completion.sh
+source ~/elm-sh-completion/elm-completion.sh
+
+export PATH=$PATH:/usr/local/go/bin
