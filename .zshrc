@@ -35,3 +35,12 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 source ~/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+
+
+# zsh parameter completion for the dotnet CLI
+_dotnet_zsh_complete()
+{
+	local completions=("$(dotnet complete "$words")")
+	reply=( "${(ps:\n:)completions}" )
+}
+compctl -K _dotnet_zsh_complete dotnet
