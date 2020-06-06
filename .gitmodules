@@ -10,3 +10,7 @@
 	path = fast-syntax-highlighting
 	url = https://github.com/zdharma/fast-syntax-highlighting
 	branch = master
+[submodule "elm-sh-completion"]
+	path = elm-sh-completion
+	url = https://github.com/dmy/elm-sh-completion.git
+	branch = master

@@ -44,3 +44,5 @@ _dotnet_zsh_complete()
 	reply=( "${(ps:\n:)completions}" )
 }
 compctl -K _dotnet_zsh_complete dotnet
+
+source ~/.bash/elm-sh-completion/elm-completion.sh
