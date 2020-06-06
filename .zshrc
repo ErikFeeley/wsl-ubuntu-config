@@ -11,4 +11,4 @@ zstyle :compinstall filename '/home/efeeley/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
-alias config='/usr/bin/git --git-dir=/home/efeeley/.cfg/ --work-tree=/home/efeeley'
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
