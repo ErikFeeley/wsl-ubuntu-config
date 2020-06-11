@@ -29,6 +29,9 @@ alias ll='ls -la'
 ## Show hidden files ##
 alias l.='ls -d .* --color=auto'
 
+# git aliases
+alias gits='git status'
+
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
