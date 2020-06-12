@@ -32,6 +32,9 @@ alias l.='ls -d .* --color=auto'
 # git aliases
 alias gits='git status'
 
+## vs code aliases ##
+alias ci='code-insiders'
+
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
