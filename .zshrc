@@ -33,6 +33,7 @@ alias l.='ls -d .* --color=auto'
 alias gits='git status'
 
 ## vs code aliases ##
+alias c='code'
 alias ci='code-insiders'
 
 
@@ -59,3 +60,5 @@ compctl -K _dotnet_zsh_complete dotnet
 source ~/elm-sh-completion/elm-completion.sh
 
 export PATH=$PATH:/usr/local/go/bin
+
+export PATH=$PATH:$HOME/.dotnet/tools
