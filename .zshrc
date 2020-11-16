@@ -36,6 +36,11 @@ alias gits='git status'
 alias c='code'
 alias ci='code-insiders'
 
+## Python ##
+alias python='python3'
+alias python2='python2.7'
+export PYTHON=/usr/bin/python2.7
+
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -62,3 +67,5 @@ source ~/elm-sh-completion/elm-completion.sh
 export PATH=$PATH:/usr/local/go/bin
 
 export PATH=$PATH:$HOME/.dotnet/tools
+
+export PATH="$PATH:/usr/local/bin/python"
